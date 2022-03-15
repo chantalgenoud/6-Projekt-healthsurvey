@@ -64,10 +64,13 @@
             <div class = "col-10">
                 <div class="slidecontainer">
                     <form action="page2.php" method="post"> <!-- muss noch erstellt werden -->
+                        Dein Vorname  <input type= "text" name="vorname">
+                        <br>
+                        <br>
                         <input type="range" min="1" max="5" class="slider" name="slider" id="silder">
                         <div class = "submit">
-                            <br>
-                            <input type= "submit" class ="submitButtom" value="submit">
+                        <br>
+                        <input type= "submit" class ="submitButtom" value="submit">
                         </div>      
                     </form> 
                 </div>
