@@ -1,0 +1,16 @@
+body {
+    background-color: #CAF2FF;
+}
+
+h1 {
+    font-size: 61px;
+}
+
+#orientation {
+    font-size: 3em;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
