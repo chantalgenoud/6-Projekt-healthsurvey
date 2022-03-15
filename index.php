@@ -15,6 +15,7 @@
 </head>
 <body>
 
+
 <div class="container">
     <div class="row">
         <div class="col-8 p-3 m-5">
@@ -28,7 +29,7 @@
 <div class = "container">
     <div class = "row">
         <div class = "col-12 mt-4">
-            <h2>Umfrage zu den Themen: Ernährung, Fitness  und Sport.</h2>
+            <h2>Umfrage zu den Themen: Ernährung, Fitness  und Sport</h2>
                 <p>Wie gesund und fit bist du derzeit? Durch diese Umfrage erhälst du eine Rückmeldung über Ihren Zustand. 
                     Die Umfrage beinhaltet 10 Fragen und dauert 8 Minuten. Eine kurze Auswertung hilft dir, deine Gesundheit
                     richtig einzuschätzen. Tip: Beantworte die Fragen nach nach deinem ersten Eindruck und zögere nicht allzu lange. 
