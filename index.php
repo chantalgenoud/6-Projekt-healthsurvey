@@ -5,21 +5,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Umfrage zu Ihrer Gesundheit</title>
 
-  <!--JavaScript-->
-  <!--Validiert ob ein Wert eingeben wird, aber wie? ist ja 1-5 automatisch, bitte prüfen, wie validiere ich einen Slider -->
+    <div class="container">
+        <div class="col mt-5">
+            <title>Umfrage zu Ihrer Gesundheit</title>
+        </div>
+    </div>
 
-  <script> 
-    function validateForm () {
-        let x = document.forms ["myForm"]["slider"].value;
-        if ( x == "") {
-            alert("Bitte geben Sie einen Wert an";) //hier kommt statt alert einen Text im Formular (p tag als innerhmtl?)
-            return false;
-        }
-    }
-
-  </script>
+  <!--JavaScript Einbettung-->
+  <script src="javaScript.js"> </script>
 
   <!--Bootsrap 5-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
@@ -34,11 +28,11 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-8 p-3 m-5">
-            <h1>Umfrage zu deiner Gesundheit</h1>
+        <div class="col-8 m-3">
+            <h1 style="text-align:left">Umfrage zu deiner Gesundheit</h1>
         </div>
         <div class="col m-2 p-4" id="orientation">
-            <strong><p>1/10</p></strong>
+            <strong><p>Frage 1/10</p></strong>
         </div>
 </div>
 
@@ -75,33 +69,41 @@
 <!-- Hier kommt ein Formular-->
 <!-- Hier kommt der Range Slider -->
 
-    <div class = "container">
+<form name="myForm" action="resultTest.php" onsubmit="return validateForm()" method="post"> <!-- muss noch erstellt werden -->
+<div class = "row m-5">
+        <div class = "col">
+            Dein Vorname  <input type= "text" name="vorname"> <!--Das nur auf Seite 1-->
+    </div>
+</div>
+
+<div class = "container">
         <div class = "row">
-            <div class = "col-1">
+            <div class = "col-1 mt-4">
                 <p class ="nummer">1</p>
             </div>
 
             <div class = "col-10">
                 <div class="slidecontainer">
-                    <form name="myForm" action="resultTest.php" onsubmit="return validateForm()" method="post"> <!-- muss noch erstellt werden -->
-                        Dein Vorname  <input type= "text" name="vorname">
+                    
+
                         <br>
                         <br>
-                        <input type="range" min="1" max="5" class="slider" name="slider" id="silder">
+                        <input type="range" min="1" max="5" class="slider" name="slider" id="slider">
                         <div class = "submit">
                         <br>
                         <input type= "submit" class ="submitButtom" value="Eingabe">
                         </div>      
-                    </form> 
+                        <p= setWarning> </p>
                 </div>
             </div>
 
-            <div class = "col-1">
+            <div class = "col-1 mt-4">
                 <p class="nummer">5 </p>  
             </div>
 
         </div>
     </div>
+</form> 
     
     <hr>
 

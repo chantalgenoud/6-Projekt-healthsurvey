@@ -1,3 +1,5 @@
+<?php include 'includeHead.php';?>
+
 <!-- Frage -->
 <div class = "container">
     <div class = "row m-5">
@@ -12,18 +14,18 @@
 
 <!-- Hier kommt ein Formular-->
 <!-- Hier kommt der Radio Buttom -->
-            <div class = "col-12">
+            <div class = "col-12 m-5">
                 <div class="radiobutton">
                     <form name="myForm" action="page3.php" onsubmit="return validateForm()" method="post"> <!-- muss noch erstellt werden -->
                         <br>
                         <br>
                         <div>    
-                            <input type="radio" name="radioJa" id="radioJa" value="radioJa">
+                            <input type="radio" name="radio" id="radioJa" value="radioJa">
                                 <label for="radioJa">Ja</label>
                         </div>
-
+                        <br>
                         <div>
-                            <input type="radio" name="radioNein" id="radioNein" value="radioNein">
+                            <input type="radio" name="radio" id="radioNein" value="radioNein">
                                     <label for="radioNein">Nein</label>
                         </div>
                         <div class = "submit">
@@ -40,3 +42,5 @@
     </div>
     
     <hr>
+
+    <?php include 'includeFooter.php';?>
