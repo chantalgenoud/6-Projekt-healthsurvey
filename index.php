@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="stylesheet.css">
 
 </head>
+<!--Head Ende-->
+
 <body>
 
 
@@ -89,11 +91,12 @@
                         <br>
                         <br>
                         <input type="range" min="1" max="5" class="slider" name="slider" id="slider">
+                        <input type="hidden" name="pageID" value="index"> <!-- Hidden Field -->
                         <div class = "submit">
                         <br>
                         <input type= "submit" class ="submitButtom" value="Eingabe">
                         </div>      
-                        <p= setWarning> </p>
+                        <p id="slider"> </p> <!--Hier soll der Wert des Sliders provisorisch dargestellt werden, was nicht klappt-->
                 </div>
             </div>
 
