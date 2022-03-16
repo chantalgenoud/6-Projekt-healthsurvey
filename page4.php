@@ -1,11 +1,21 @@
 <?php include 'includeHead.php';?>
 
+<div class="container">
+    <div class="row">
+        <div class="col-8 m-3">
+            <h1 style="text-align:left">Umfrage zu deiner Gesundheit</h1>
+        </div>
+        <div class="col m-2 p-4" id="orientation">
+            <strong><p>Frage 4/10</p></strong>
+        </div>
+</div>
+
 <!-- Frage -->
 <div class = "container">
     <div class = "row m-5">
         <div class = "col-8">
             <h2>4. Frage</h2>
-                <p>Welche zusätzliche körperliche Aktivität betreibst du am meisten? <br> 
+                <p>Welche zusätzliche körperliche Aktivität betreibst du am meisten?</p> <br> 
 
         </div>
         <div class = "col-4">
@@ -31,14 +41,14 @@
                     </div>         
                     <br>
                     <div>
-                        <input type="checkbox" class="activity" name="activity" id="yes" value="yes" checked>
+                        <input type="checkbox" class="activity" name="activity" id="yes" value="yes">
                             <label for="yes">Gewichte heben / Gehen / Wandern / Joggen / Rennen / Schwimmen / Tanzen / Fitness / Pilates / Yoga / Team Sport
                             </label>    
                     </div>
                     <br>
                     <div>
-                        <input type="checkbox" class="activity" name="activity" id="yes" value="yes" checked>
-                            <label for="yes">Andere <!--Hier kommt noch ein Formularfeld leer-->
+                        <input type="checkbox" class="activity" name="activity" id="yes" value="yes">
+                            <label for="yes">Andere Sportart/en <!--Hier kommt noch ein Formularfeld leer-->
                             </label>    
                     </div>
                     
@@ -50,7 +60,7 @@
             </div>
     </div>
 </form> 
-    
+    <br>
     <hr>
 
 <?php include 'includeFooter.php';?>

@@ -1,5 +1,18 @@
 <?php include 'includeHead.php';?>
 
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 m-3">
+            <h1 style="text-align:left">Umfrage zu deiner Gesundheit</h1>
+        </div>
+        <div class="col m-2 p-4" id="orientation">
+            <strong><p>Frage 2/10</p></strong>
+        </div>
+</div>
+
 <!-- Frage -->
 <div class = "container">
     <div class = "row m-5">
@@ -17,8 +30,7 @@
             <div class = "col-12 m-5">
                 <div class="radiobutton">
                     <form name="myForm" action="page3.php" onsubmit="return validateForm()" method="post"> <!-- muss noch erstellt werden -->
-                        <br>
-                        <br>
+                        <input type="hidden" name="pageID" value="page2"> <!--Hidden Field-->
                         <div>    
                             <input type="radio" name="radio" id="radioJa" value="radioJa">
                                 <label for="radioJa">Ja</label>
@@ -36,11 +48,10 @@
                 </div>
             </div>
 
+            <hr>
 
-
-        </div>
-    </div>
     
-    <hr>
+
 
     <?php include 'includeFooter.php';?>
+

@@ -9,7 +9,7 @@
             <h1 style="text-align:left">Umfrage zu deiner Gesundheit</h1>
         </div>
         <div class="col m-2 p-4" id="orientation">
-            <strong><p>Frage 7/10</p></strong>
+            <strong><p>Frage 10/10</p></strong>
         </div>
 </div>
 
