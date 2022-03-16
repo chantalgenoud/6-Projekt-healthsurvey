@@ -1,4 +1,5 @@
 <?php include 'includeHead.php';?>
+<?php include 'data-collector.php';?>
 
 <body>
 

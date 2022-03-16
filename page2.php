@@ -1,7 +1,14 @@
-<?php include 'includeHead.php';?>
+
+<?php include 'includeHead.php';?> 
+<?php include 'data-collector.php';?> 
+
+<!-- Es verreisst mir die Seite wieso?-->
+
+
+
+</head>
 
 <body>
-
 
 <div class="container">
     <div class="row">
