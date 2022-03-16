@@ -1,4 +1,4 @@
-<!--Bootstrap-->
+<!-- Head -->
 
 <!DOCTYPE html>
 <html lang="de">
@@ -6,6 +6,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Umfrage zu Ihrer Gesundheit</title>
+
+  <!--JavaScript-->
+  <!--Validiert ob ein Wert eingeben wird, aber wie? ist ja 1-5 automatisch, bitte prüfen, wie validiere ich einen Slider -->
+
+  <script> 
+    function validateForm () {
+        let x = document.forms ["myForm"]["slider"].value;
+        if ( x == "") {
+            alert("Bitte geben Sie einen Wert an";) //hier kommt statt alert einen Text im Formular (p tag als innerhmtl?)
+            return false;
+        }
+    }
+
+  </script>
+
+  <!--Bootsrap 5-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
@@ -26,6 +42,7 @@
         </div>
 </div>
 
+<!-- Dieser container ist nur für die erste Seite -->
 <div class = "container">
     <div class = "row">
         <div class = "col-12 mt-4">
@@ -39,7 +56,10 @@
 </div> 
 
 <hr>
+<!--Nur für die erste Seite, Ende-->
 
+
+<!-- Frage -->
 <div class = "container">
     <div class = "row m-5">
         <div class = "col-8">
@@ -52,8 +72,7 @@
     </div>
 </div> 
 
-<!-- Hier kommt ein Formular noch rein -->
-
+<!-- Hier kommt ein Formular-->
 <!-- Hier kommt der Range Slider -->
 
     <div class = "container">
@@ -64,14 +83,14 @@
 
             <div class = "col-10">
                 <div class="slidecontainer">
-                    <form action="page2.php" method="post"> <!-- muss noch erstellt werden -->
+                    <form name="myForm" action="resultTest.php" onsubmit="return validateForm()" method="post"> <!-- muss noch erstellt werden -->
                         Dein Vorname  <input type= "text" name="vorname">
                         <br>
                         <br>
                         <input type="range" min="1" max="5" class="slider" name="slider" id="silder">
                         <div class = "submit">
                         <br>
-                        <input type= "submit" class ="submitButtom" value="submit">
+                        <input type= "submit" class ="submitButtom" value="Eingabe">
                         </div>      
                     </form> 
                 </div>
@@ -86,6 +105,7 @@
     
     <hr>
 
+ <!--Footer-->   
     <div class ="container">
         <div clas = "col m-4">
             <p>Copyright = 2022 Alle Rechte vorbehalten </p>

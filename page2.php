@@ -1,31 +1,42 @@
-<!--Bootstrap-->
+<!-- Frage -->
+<div class = "container">
+    <div class = "row m-5">
+        <div class = "col-8">
+            <h2>2. Frage</h2>
+                <p>Nimmst du Nahrungsergänzungsmittel?</p> <br> 
+        </div>
+        <div class = "col-4">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="5em" width="5em" xmlns="http://www.w3.org/2000/svg"><path d="M217.4 27.43c-27.9.47-53.1 17.11-64.5 42.84l136.5 41.23c6-35.79-15.5-70.49-50.1-81.02-6.2-1.88-12.7-2.91-19.2-3.05h-2.7zm-69.7 60.08c-6.1 35.89 15.4 70.69 50.1 81.19 34.8 10.5 71.9-6.7 86.5-40zm265.5 44.29c-25.3.1-52.2 12.3-72.5 41L215.9 349.7c-33.5 47.4-18.9 97 14.1 120.4 33.1 23.5 84.6 20.8 118.1-26.6l124.7-176.8c33.5-47.5 18.9-97-14.1-120.5-12.4-8.8-27.3-13.9-43-14.4zm-1.8 17.3c1.3 0 2.6 0 3.8.1 12.1.5 23.5 4.8 33.1 11.7 25.7 18.2 38.6 54.5 9.7 95.4l-64.5 91.5c-35.8-9.6-81.8-42.3-102.7-73l64.7-91.6c16.9-23.9 37-33.7 55.9-34.1zM91.25 225.3c-9.62.1-19.11 2.1-27.93 6-33.11 14.5-50.34 51.5-40.24 86.3l130.72-57.1c-13.1-22.1-36.9-35.5-62.55-35.2zm69.65 51.6L30.2 334.1c18.45 31.4 57.3 44 90.6 29.5 33.2-14.6 50.4-51.8 40.1-86.7z"></path></svg>
+    </div>
+</div> 
 
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Umfrage zu Ihrer Gesundheit</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<!-- Hier kommt ein Formular-->
+<!-- Hier kommt der Radio Buttom -->
+            <div class = "col-12">
+                <div class="radiobutton">
+                    <form name="myForm" action="page3.php" onsubmit="return validateForm()" method="post"> <!-- muss noch erstellt werden -->
+                        <br>
+                        <br>
+                        <div>    
+                            <input type="radio" name="radioJa" id="radioJa" value="radioJa">
+                                <label for="radioJa">Ja</label>
+                        </div>
 
-  <link rel="stylesheet" href="stylesheet.css">
+                        <div>
+                            <input type="radio" name="radioNein" id="radioNein" value="radioNein">
+                                    <label for="radioNein">Nein</label>
+                        </div>
+                        <div class = "submit">
+                        <br>
+                        <input type= "submit" class ="submitButtom" value="Eingabe">
+                        </div>      
+                    </form> 
+                </div>
+            </div>
 
-</head>
-<body>
-
-<html>
-<body>
-
-Liebe/r <?php echo $_POST["vorname"]; ?>
-<br>
-Deine körperliche Gesundheit ist <?php echo $_POST["slider"]; ?><br>
 
 
-
-</body>
-</html>
-
-</body>
-</html>
+        </div>
+    </div>
+    
+    <hr>
