@@ -32,7 +32,7 @@ Kohlenhydrate?</p>
 <!-- Hier kommt ein Feld für einen Zahl-->
 <div class = "col-12 m-5">
                 <div class="integer">
-                    <form name="myForm" action="page7.php" onsubmit="return validateForm()" method="post"> <!-- muss noch erstellt werden -->
+                    <form name="myForm" action="page7.php" onsubmit="return validateNumber()" method="post"> <!-- muss noch erstellt werden -->
                         <br>
                         <input type="hidden" name="pageID" value="page6"> <!--Hidden Field-->
                         <div>    
@@ -40,6 +40,7 @@ Kohlenhydrate?</p>
                         </div>
                         <div class = "submit">
                         <br>
+                        <p id="validation-warning" style="color:red"> </p> <!--Hier ist die Warnung aus JS, wenn nichts eingegeben wurde in rot-->
                         <input type= "submit" class ="submitButtom" value="Eingabe">
                         </div>      
                     </form> 

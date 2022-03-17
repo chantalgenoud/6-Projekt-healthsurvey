@@ -1,9 +1,6 @@
-
+<!--Hier wird der Head und die Datensammlung eingebettet als include -->
 <?php include 'includeHead.php';?> 
 <?php include 'data-collector.php';?> 
-
-<!-- Es verreisst mir die Seite wieso?-->
-
 
 
 </head>
@@ -33,22 +30,24 @@
 </div> 
 
 <!-- Hier kommt ein Formular-->
-<!-- Hier kommt der Radio Buttom -->
+<!-- Hier kommt der Radio Buttom hier kommt noch was rein bei onsubmit...-->
             <div class = "col-12 m-5">
                 <div class="radiobutton">
-                    <form name="myForm" action="page3.php" onsubmit="return validateForm()" method="post"> <!-- muss noch erstellt werden -->
+                    <form name="myForm" action="page3.php" onsubmit="return validateRadio('single-choice')" method="post"> <!-- muss noch erstellt werden -->
                         <input type="hidden" name="pageID" value="page2"> <!--Hidden Field-->
                         <div>    
-                            <input type="radio" name="radio" id="radioJa" value="radioJa">
+                            <input type="radio" name="radioName" id="radioJa" value="radioJa">
                                 <label for="radioJa">Ja</label>
                         </div>
                         <br>
                         <div>
-                            <input type="radio" name="radio" id="radioNein" value="radioNein">
+                            <input type="radio" name="radioName" id="radioNein" value="radioNein">
                                     <label for="radioNein">Nein</label>
                         </div>
                         <div class = "submit">
                         <br>
+                        <p id="validation-warning" style=color:red></p> <!--Das klappt noch nicht wirklich-->
+
                         <input type= "submit" class ="submitButtom" value="Eingabe">
                         </div>      
                     </form> 
