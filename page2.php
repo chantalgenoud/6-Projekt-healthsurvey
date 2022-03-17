@@ -33,16 +33,16 @@
 <!-- Hier kommt der Radio Buttom hier kommt noch was rein bei onsubmit...-->
             <div class = "col-12 m-5">
                 <div class="radiobutton">
-                    <form name="myForm" action="page3.php" onsubmit="return validateRadio('single-choice')" method="post"> <!-- muss noch erstellt werden -->
+                    <form name="myForm" action="page3.php" onsubmit="return validateRadio('radioName');" method="post"> <!-- muss noch erstellt werden -->
                         <input type="hidden" name="pageID" value="page2"> <!--Hidden Field-->
                         <div>    
-                            <input type="radio" name="radioName" id="radioJa" value="radioJa">
-                                <label for="radioJa">Ja</label>
+                            <input type="radio" name="radioName" id="radioName" value="radioJa">
+                                <label for="radioName">Ja</label>
                         </div>
                         <br>
                         <div>
-                            <input type="radio" name="radioName" id="radioNein" value="radioNein">
-                                    <label for="radioNein">Nein</label>
+                            <input type="radio" name="radioName" id="radioName" value="radioNein">
+                                    <label for="radioName">Nein</label>
                         </div>
                         <div class = "submit">
                         <br>
