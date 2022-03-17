@@ -21,7 +21,7 @@ function validateForm() {
 
 //das in der schule gemacht
 function validateNumber () {
-    let value = document.getElementById("numberCarbon").value; //die anzahl snacks die pro tag gegessen wird als wert.
+    let value = document.getElementById("number").value; //die anzahl snacks die pro tag gegessen wird als wert.
         if (value == "") {
         setWarning("Bitte geben Sie eine Zahl an!");
 
