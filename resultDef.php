@@ -10,7 +10,7 @@
             <h1 style="text-align:left">Umfrage zu deiner Gesundheit</h1>
         </div>
         <div class="col m-2 p-4" id="orientation">
-            <strong><p>Ergebnis</p></strong>
+            <img src="logo.png">
         </div>
 </div>
 
@@ -18,8 +18,9 @@
 <div class = "container">
     <div class = "row">
         <div class = "col-12 mt-4">
-            <h2>Ernährung, Fitness  und Sport. Dein Ergebnis:</h2>
-                <p>LOREM IPSUM DOLOR</p>
+            <h2>Ergebnis</h2>
+                <p>Liebe/r <?php echo $_POST["vorname"]; ?>
+<br>LOREM IPSUM DOLOR</p>
         </div>
     </div>
 </div> 
