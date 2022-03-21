@@ -28,7 +28,7 @@
 <!-- Hier kommt der Range Slider -->
 
 <form name="myForm" action="page5.php" onsubmit="return validateForm()" method="post"> <!-- muss noch erstellt werden -->
-
+<input type="hidden" name="pageID" value="page4"> <!--Hidden Field-->
 
 <div class = "container">
 

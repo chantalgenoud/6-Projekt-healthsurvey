@@ -20,7 +20,7 @@
         <div class = "col-8">
             <h2>8. Frage</h2>
                 <p>An einem typischen Tag: Wie viele deiner
-Malzeiten oder Snacks enthalten
+Mahlzeiten oder Snacks enthalten
 Gemüse?</p>
                 <br>
         </div>

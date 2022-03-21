@@ -31,7 +31,7 @@
 
 <!--Hier kommt das Formular-->
 <form name="myForm" action="page6.php" onsubmit="return validateForm()" method="post"> <!-- muss noch erstellt werden -->
-
+    <input type="hidden" name="pageID" value="page5"> <!--Hidden Field-->
 <div class = "container">
         <div class = "row">
             <div class = "col-1 mt-4">

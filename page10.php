@@ -20,7 +20,7 @@
         <div class = "col-8">
             <h2>10. Frage</h2>
                 <p>An einem typischen Tag: Wie viele deiner
-Malzeiten kommen aus der Mikrowelle
+Mahlzeiten kommen aus der Mikrowelle
 oder sind schon fertig zubereitet?</p>
                 <br>
         </div>
