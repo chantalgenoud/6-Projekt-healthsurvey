@@ -22,7 +22,9 @@ Liebe/r <?php echo $_POST["vorname"]; ?>
 <br>
 Deine körperliche Gesundheit ist <?php echo $_POST["slider"]; ?><br>
 
-
+<?php
+// DEVONLY
+         echo "$totalPoints = $totalPoints<br>"; ?>
 
 </body>
 </html>

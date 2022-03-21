@@ -1,5 +1,6 @@
 <?php include 'includeHead.php';?>
 <?php include 'data-collector.php';?>
+<?php include 'data-analysis'; ?>
 
 <body>
 
@@ -35,7 +36,7 @@ oder sind schon fertig zubereitet?</p>
 <!-- Hier kommt ein Feld für einen Zahl-->
 <div class = "col-12 m-5">
                 <div class="integer">
-                    <form name="myForm" action="resultDef.php" onsubmit="return validateNumber()" method="post"> <!-- muss noch erstellt werden -->
+                    <form name="myForm" action="feedback.php" onsubmit="return validateNumber()" method="post"> <!-- muss noch erstellt werden -->
                         <br>
                         <input type="hidden" name="pageID" value="page10"> <!--Hidden Field-->
                         <div>    
