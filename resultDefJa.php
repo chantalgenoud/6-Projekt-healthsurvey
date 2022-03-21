@@ -8,9 +8,7 @@
     <div class="row">
         <div class="col-8 m-3">
             <h1 style="text-align:left">Umfrage zu deiner Gesundheit</h1>
-        </div>
-        <div class="col m-2 p-4" id="orientation">
-            <img src="logo.png">
+        </div>exit();
         </div>
 </div>
 

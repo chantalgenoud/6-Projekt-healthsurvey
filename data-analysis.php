@@ -1,4 +1,4 @@
-<!-- ACHTUNG, diese Datei ist noch nicht eingebettet -->
+
 <div>
 <?php 
 
@@ -12,11 +12,13 @@
 
 if (isset($_SESSION ['index'])) {
     $post = $_SESSION['index']; // Schlüssel für wert im index.php das die Seiten ID bei mir
-    $valueQuestion1 = $POST['slider']; // das der Name des Wertes, hier holen wir den Wert raus
+    $valueQuestion1 = $post['slider']; // das der Name des Wertes, hier holen wir den Wert raus
 
 
     // DEVONLY
-    echo "$post = $post<br>"; // "$post" ist KEIN Platzhalter; "$post" IST Platzhalter
+    echo '<pre>';
+    print_r($post);
+    echo '<pre>';
 }
 
     else {
@@ -40,16 +42,19 @@ if ($valueQuestion1 > 3) {
 
 
         // DEVONLY
-        echo "$totalPoints = $totalPoints<br>";
+        echo "\$totalPoints = $totalPoints<br>";
 
         // DEVONLY
-        echo "$valueQuestion1 = $valueQuestion1<br>";
+        echo "\$valueQuestion1 = $valueQuestion1<br>";
 
 }
 
+
+/*
+
 // Frage 2
 
-if (isset($_SESSION ('page2'))) {
+if (isset($_SESSION ['page2'])) {
     $post = $_SESSION['page2']; // Schlüssel für wert im index.php das die Seiten ID bei mir
     $valueQuestion2 = $POST['radioName']; // das der Name des Wertes, hier holen wir den Wert raus
 }
@@ -170,10 +175,7 @@ if ($valueQuestion8 >= 1 ) {
 // Frage 9
 $valueQuestion9 = $POST['number9']; // das der Name des Wertes, hier holen wir den Wert raus
 
-if ($valueQuestion9 >= 1 ) {
-    $totalPoints += 1;
-
-
+if ($valueQuestion9 >= 1 ) {exit();
         // DEVONLY
         echo "$totalPoints = $totalPoints<br>";
 
@@ -197,11 +199,12 @@ if ($valueQuestion10 == 1 ) {
         echo "$valueQuestion10 = $valueQuestion10<br>";
 
 }
+*/ ?>
 
+</div>
+<!-- Ergebnis und Weiterleitung
 
-// Ergebnis und Weiterleitung
-
-/*wenn total points grösser gleich 6 --> gesund else ungesund */
+wenn total points grösser gleich 6 gesund else ungesund */
 
 if ($totalPoints >= 6) {
     ;// gehe auf seite gesund
@@ -213,6 +216,5 @@ else {
 ;
 }// ungesund 
 
-?> // end tag php wieso geht nicht?
 
-</div>
+--> 
