@@ -37,9 +37,9 @@ Gemüse?</p>
                 <div class="integer">
                     <form name="myForm" action="page9.php" onsubmit="return validateNumber()" method="post"> <!-- muss noch erstellt werden -->
                         <br>
-                        <input type="hidden" name="pageID" value="page7"> <!--Hidden Field-->
+                        <input type="hidden" name="pageID" value="page8"> <!--Hidden Field-->
                         <div>    
-                            <input type="number" name="number" id="number">
+                            <input type="number" name="number8" id="number">
                         </div>
                         <div class = "submit">
                         <br>

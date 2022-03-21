@@ -39,7 +39,7 @@ oder sind schon fertig zubereitet?</p>
                         <br>
                         <input type="hidden" name="pageID" value="page10"> <!--Hidden Field-->
                         <div>    
-                            <input type="number" name="number" id="number">
+                            <input type="number" name="number10" id="number">
                         </div>
                         <div class = "submit">
                         <br>

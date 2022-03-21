@@ -46,7 +46,7 @@
 
                         <br>
                         <br>
-                        <input type="range" min="1" max="5" class="slider" name="slider" id="slider">
+                        <input type="range" min="1" max="5" class="slider" name="slider3" id="slider">
                         <input type="hidden" name="pageID" value="page3"> <!-- Hidden Field -->
                         <div class = "submit">
                         <br>

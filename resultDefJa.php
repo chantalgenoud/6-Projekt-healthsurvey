@@ -19,7 +19,7 @@
     <div class = "row">
         <div class = "col-10 mt-4">
             <h2>Ergebnis: Du lebst gesund!</h2>
-                <p>Liebe/r <?php echo $_POST["vorname"]; ?>
+                <p>Liebe/r <?php echo $_POST['vorname']; ?>
 <br>Dein Ergebnis ist durchaus positiv. Bleib dran!</p>
         </div>
         <div class = "col-2 mt-4">

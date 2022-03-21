@@ -1,8 +1,7 @@
 <?php include 'includeHead.php';?>
 <?php include 'data-collector.php';?>
-<?php include 'data-analyis.php'
+<?php include 'data-analyis.php'>
 
-<body>
 
 
 <div class="container">
