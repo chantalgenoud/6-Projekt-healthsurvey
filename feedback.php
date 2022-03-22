@@ -1,5 +1,4 @@
 <?php include 'includeHead.php';?> 
-<?php include 'data-collector.php';?>
 <?php include 'data-analysis.php'; ?>
 
 
@@ -20,12 +19,12 @@
 </div>
 
 <?php
-// DEVONLY
-         echo $totalPoints = '$totalPoints<br>'; ?>
+        // DEVONLY
+        echo "\$totalPoints = $totalPoints<br>"; ?>
 
-// Ergebnis und Weiterleitung
+<!--// Ergebnis und Weiterleitung
 
-/*wenn total points grösser gleich 6 --> gesund else ungesund 
+wenn total points grösser gleich 6 ,gesund else ungesund 
 
 if ($totalPoints >= 6) {
     ;// zeige  gesund an
@@ -35,9 +34,7 @@ else {
     //zeige ungesund an
     ;
 ;
-}// ungesund */
-
-?>
+}// ungesund  -->
 
 
 </div>  
@@ -47,7 +44,7 @@ else {
     <div class = "row">
         <div class = "col-10 mt-4">
             <h2>Ergebnis: Du lebst gesund!</h2>
-                <p>Liebe/r <?php echo $_POST['vorname']; ?>
+                <p>Liebe/r <?php echo $_POST['$vorname']; ?>
 <br>Dein Ergebnis ist durchaus positiv. Bleib dran!</p>
         </div>
         <div class = "col-2 mt-4">
@@ -67,7 +64,7 @@ else {
     <div class = "row">
         <div class = "col-10 mt-4">
             <h2>Ergebnis: Ops, du lebst ungesund!</h2>
-                <p>Liebe/r <?php echo $_POST['vorname']; ?>
+                <p>Liebe/r <?php echo $_POST['$vorname']; ?>
 <br>Dein Ergebnis ist nicht als Urteil zu verstehen, sondern als eine Chance, die du nutzen solltest. Regelmässige Bewegung, sowie eine ausgelgelichene Ernährung sind Key für ein gesundes Leben. Tu es für dich! Weil du es dir Wert bist.</p>
         </div>
         <div class = "col-2 mt-4">
