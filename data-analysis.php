@@ -54,7 +54,7 @@ if ($valueQuestion1 >= 3) {
 
 
         // DEVONLY
-        echo "\$totalPoints = Die Total Punkte sind $totalPoints<br>";
+        echo "Die Anzahl Punkte sind $totalPoints<br>";
 
 
 }
@@ -116,7 +116,7 @@ echo "Die Anzahl Punkte sind $totalPoints<br>";
 $post = $_SESSION['page5'];
 $valueQuestion5 = $post['slider5']; // das der Name des Wertes, hier holen wir den Wert raus
 
-if ($valueQuestion5 > 3) {
+if ($valueQuestion5 = 3) {
     $totalPoints += 1;
 }
 
@@ -125,83 +125,79 @@ echo "der Wert aus Frage 5 ist $valueQuestion5. ";
 // DEVONLY
 echo "Die Anzahl Punkte sind $totalPoints<br>";
 
-/* // Frage 6
-
+ // Frage 6
+$post = $_SESSION['page6'];
 $valueQuestion6 = $post['number6']; // das der Name des Wertes, hier holen wir den Wert raus
 
 if ($valueQuestion6 >= 2 ) {
     $totalPoints += 1;
-
-
-     // DEVONLY
-     echo "Die Anzahl Punkte sind $totalPoints<br>";
 }
+
+echo "der Wert aus Frage 6 ist $valueQuestion6. ";
+
+// DEVONLY
+echo "Die Anzahl Punkte sind $totalPoints<br>";
 
 
 // Frage 7
-
+$post = $_SESSION['page7'];
 $valueQuestion7 = $post['number7']; // das der Name des Wertes, hier holen wir den Wert raus
 
 if ($valueQuestion7 >= 2 ) {
     $totalPoints += 1;
-
-
-     // DEVONLY
-     echo "Die Anzahl Punkte sind $totalPoints<br>";
-
 }
 
-// Frage 8 
+echo "der Wert aus Frage 7 ist $valueQuestion7. ";
 
+// DEVONLY
+echo "Die Anzahl Punkte sind $totalPoints<br>";
+
+// Frage 8 
+$post = $_SESSION['page8'];
 $valueQuestion8 = $post['number8']; // das der Name des Wertes, hier holen wir den Wert raus
 
 if ($valueQuestion8 >= 1 ) {
     $totalPoints += 1;
-
-
-     // DEVONLY
-     echo "Die Anzahl Punkte sind $totalPoints<br>";
 }
+
+echo "der Wert aus Frage 8 ist $valueQuestion8. ";
+
+// DEVONLY
+echo "Die Anzahl Punkte sind $totalPoints<br>";
 
 
 // Frage 9
+$post = $_SESSION['page9'];
 $valueQuestion9 = $post['number9']; // das der Name des Wertes, hier holen wir den Wert raus
 
 if ($valueQuestion9 >= 1 ) {
-
-     // DEVONLY
-     echo "Die Anzahl Punkte sind $totalPoints<br>";
+    $totalPoints += 1;
 }
 
-// Frage 10 Fertigood Mikrowelle wenn 0\$totalPoints =
+echo "der Wert aus Frage 9 ist $valueQuestion9. ";
 
+// DEVONLY
+echo "Die Anzahl Punkte sind $totalPoints<br>";
+
+// Frage 10 Fertigfood Mikrowelle wenn 0\$totalPoints +1
+
+
+$post = $_SESSION['page10'];
 $valueQuestion10 = $post['number10']; // das der Name des Wertes, hier holen wir den Wert raus
 
-if ($valueQuestion10 == 1 ) {
+if ($valueQuestion10 == 0) {
     $totalPoints += 1;
-
-     // DEVONLY
-     echo "Die Anzahl Punkte sind $totalPoints<br>";
-
 }
- */ ?>
+
+echo "der Wert aus Frage 10 ist $valueQuestion10. ";
+
+// DEVONLY
+echo "Die Anzahl Punkte sind $totalPoints<br>";
+
+?>
 
 </div>
 
-
-<!-- Ergebnis und Weiterleitung
-
-wenn total points grösser gleich 6 gesund else ungesund */
-
-if ($totalPoints >= 6) {
-    ;// gehe auf seite gesund
-}
-
-else {
-    
-    ;
-;
-}// ungesund 
 
 
 --> 
