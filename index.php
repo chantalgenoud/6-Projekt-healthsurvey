@@ -3,6 +3,7 @@ session_start();
 session_destroy(); //um den cache zu leeren
 
 include 'includeHead.php';
+include 'error-types.php'
 ?>
 
 <body>

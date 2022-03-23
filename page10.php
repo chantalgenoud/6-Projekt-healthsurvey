@@ -1,6 +1,6 @@
 <?php include 'includeHead.php';?>
 <?php include 'data-collector.php';?>
-<?php include 'data-analysis'; ?>
+
 
 <body>
 

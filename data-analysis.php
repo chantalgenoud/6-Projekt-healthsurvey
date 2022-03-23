@@ -2,15 +2,17 @@
 <div>
 <?php 
 
+$totalPoints = 0;
+
 // Frage 1
 
 // ist ein Schlüssel gesetzt?, sonst hat der PHP Code einen Fehler
     //Die Funktion dazu: isset() (geht das auch manuell?). Es wird nur der Schlüssel getestet. ergo
 
-    $totalPoints = 0;
 
 
-if (isset($_SESSION ['index'])) {
+
+/*if (isset($_SESSION ['index'])) {
     $post = $_SESSION['index']; // Schlüssel für wert im index.php das die Seiten ID bei mir
     $valueQuestion1 = $post['slider']; // das der Name des Wertes, hier holen wir den Wert raus
 
@@ -23,9 +25,18 @@ if (isset($_SESSION ['index'])) {
 
     else {
         echo "Achtung, hier ist ein Development ERROR (not set). Schlüssel fehlt.";
-    }
+    } */
 
-    echo "$valueQuestion1";
+
+    $post = $_SESSION['index'];
+    $valueQuestion1 = $post['slider']; //da war ein fehler das underline fehlte
+
+    // sollte tendenziell auch so gehen $valueQuestion1 = $_SESSION['index']['slider'];
+
+
+    echo "der Wert aus Frage eins ist $valueQuestion1";
+
+
 
 /*if ($valueQuestion1 <= 3) {
     //ungesund (0 Punkte) sind Werte von 0 bis 3
@@ -38,92 +49,83 @@ else {
 
 ergo wenn wert der Frage 1 über 3 ist, wird bei totalPoints 1 dazu gerechnet */
 
-if ($valueQuestion1 > 3) {
+if ($valueQuestion1 >= 3) {
     $totalPoints += 1;
 
 
         // DEVONLY
-        echo "\$totalPoints = $totalPoints<br>";
+        echo "\$totalPoints = Die Total Punkte sind $totalPoints<br>";
 
-        // DEVONLY
-        echo "\$valueQuestion1 = $valueQuestion1<br>";
 
 }
 
-/*
 
 
-// Frage 2
+// Frage 2 in einfach
 
-if (isset($_SESSION ['page2'])) {
-    $post = $_SESSION['page2']; // Schlüssel für wert im index.php das die Seiten ID bei mir
-    $valueQuestion2 = $post['radioName']; // das der Name des Wertes, hier holen wir den Wert raus
-}
-    else {
-        echo "Achtung, hier ist ein Development ERROR (not set). Schlüssel fehlt.";
-    }
- 
+
+    $post = $_SESSION['page2'];
+    $valueQuestion2 = $post['radioName']; //da war ein fehler das underline fehlte
+
+    // sollte tendenziell auch so gehen $valueQuestion1 = $_SESSION['index']['slider'];
+
+
+    echo "der Wert aus Frage 2 ist $valueQuestion2. ";
 
     if ($valueQuestion2 == "radioJa") {
         $totalPoints += 1;
     }
 
       // DEVONLY
-      echo "\$totalPoints = $totalPoints<br>";
-    
-      // DEVONLY
-      echo "\$valueQuestion2 = $valueQuestion2<br>";
+      echo "Die Anzahl Punkte sind $totalPoints<br>";
+
 
 // Frage 3
-    $post = $_SESSION['page3']; // Schlüssel für wert im index.php das die Seiten ID bei mir
+    $post = $_SESSION['page3']; // Schlüssel für wert im page3.php das die Seiten ID bei mir
     $valueQuestion3 = $post['slider3']; // das der Name des Wertes, hier holen wir den Wert raus
 
     if ($valueQuestion3 > 3) {
         $totalPoints += 1;
-    
-    
-            // DEVONLY
-            echo "\$totalPoints = $totalPoints<br>";
-    
-            // DEVONLY
-            echo "\$valueQuestion3 = $valueQuestion3<br>";
-    
+       
     }
+
+    echo "der Wert aus Frage 3 ist $valueQuestion3. ";
+
+    // DEVONLY
+    echo "Die Anzahl Punkte sind $totalPoints<br>";
+
 
 // Frage 4
 
 //wenn wert activities ja (activity = yes) dann einen plus auf total points dazu
+$post = $_SESSION['page4'];
 $valueQuestion4 = $post['activity']; // das der Name des Wertes, hier holen wir den Wert raus
 
 if ($valueQuestion4 == "yes") {
     $totalPoints += 1;
 
-
-        // DEVONLY
-        echo "\$totalPoints = $totalPoints<br>";
-
-        // DEVONLY
-        echo "\$valueQuestion4 = $valueQuestion4<br>";
-
 }
 
-// Frage 5 
+echo "der Wert aus Frage 4 ist $valueQuestion4. ";
 
+// DEVONLY
+echo "Die Anzahl Punkte sind $totalPoints<br>";
+
+
+ // Frage 5 
+$post = $_SESSION['page5'];
 $valueQuestion5 = $post['slider5']; // das der Name des Wertes, hier holen wir den Wert raus
 
 if ($valueQuestion5 > 3) {
     $totalPoints += 1;
-
-
-        // DEVONLY
-        echo "\$totalPoints = $totalPoints<br>";
-
-        // DEVONLY
-        echo "\$valueQuestion5 = $valueQuestion5<br>";
-
 }
 
-// Frage 6
+echo "der Wert aus Frage 5 ist $valueQuestion5. ";
+
+// DEVONLY
+echo "Die Anzahl Punkte sind $totalPoints<br>";
+
+/* // Frage 6
 
 $valueQuestion6 = $post['number6']; // das der Name des Wertes, hier holen wir den Wert raus
 
@@ -131,12 +133,8 @@ if ($valueQuestion6 >= 2 ) {
     $totalPoints += 1;
 
 
-        // DEVONLY
-        echo "\$totalPoints = $totalPoints<br>";
-
-        // DEVONLY
-        echo "\$valueQuestion6 = $valueQuestion6<br>";
-
+     // DEVONLY
+     echo "Die Anzahl Punkte sind $totalPoints<br>";
 }
 
 
@@ -148,11 +146,8 @@ if ($valueQuestion7 >= 2 ) {
     $totalPoints += 1;
 
 
-        // DEVONLY
-        echo "\$totalPoints = $totalPoints<br>";
-
-        // DEVONLY
-        echo "\$valueQuestion7 = $valueQuestion7<br>";
+     // DEVONLY
+     echo "Die Anzahl Punkte sind $totalPoints<br>";
 
 }
 
@@ -164,12 +159,8 @@ if ($valueQuestion8 >= 1 ) {
     $totalPoints += 1;
 
 
-        // DEVONLY
-        echo "\$totalPoints = $totalPoints<br>";
-
-        // DEVONLY
-        echo "\$valueQuestion8 = $valueQuestion8<br>";
-
+     // DEVONLY
+     echo "Die Anzahl Punkte sind $totalPoints<br>";
 }
 
 
@@ -178,27 +169,19 @@ $valueQuestion9 = $post['number9']; // das der Name des Wertes, hier holen wir d
 
 if ($valueQuestion9 >= 1 ) {
 
-        // DEVONLY
-        echo "\$totalPoints = $totalPoints<br>";
-
-        // DEVONLY
-        echo "\$valueQuestion9 = $valueQuestion9<br>";
-
+     // DEVONLY
+     echo "Die Anzahl Punkte sind $totalPoints<br>";
 }
 
-// Frage 10 Fertigood Mikrowelle wenn 0
+// Frage 10 Fertigood Mikrowelle wenn 0\$totalPoints =
 
 $valueQuestion10 = $post['number10']; // das der Name des Wertes, hier holen wir den Wert raus
 
 if ($valueQuestion10 == 1 ) {
     $totalPoints += 1;
 
-
-        // DEVONLY
-        echo "\$totalPoints = $totalPoints<br>";
-
-        // DEVONLY
-        echo "\$valueQuestion10 = $valueQuestion10<br>";
+     // DEVONLY
+     echo "Die Anzahl Punkte sind $totalPoints<br>";
 
 }
  */ ?>
